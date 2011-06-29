@@ -1,0 +1,9 @@
+This plugin makes it easy to add Seam JCR and its dependencies to your project.
+
+To install, run: 
+
+forge git-plugin git://github.com/forge/plugin-seam-jcr.git
+
+To add only the api: 
+
+seam-jcr setup
