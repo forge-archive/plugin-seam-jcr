@@ -8,9 +8,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Seam JCR Forge Plugin</name>
 	<properties>
-		<forge.api.version>1.0.0-SNAPSHOT</forge.api.version>
-		<arquillian.version>1.0.0.Alpha5</arquillian.version>
-		<el-api.version>2.2</el-api.version>
+		<forge.api.version>1.0.2.Final</forge.api.version>
 	</properties>
 	<dependencies>
 		<dependency>

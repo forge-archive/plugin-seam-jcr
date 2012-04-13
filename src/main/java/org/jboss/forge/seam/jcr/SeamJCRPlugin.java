@@ -48,7 +48,7 @@ public class SeamJCRPlugin implements Plugin
       DependencyBuilder seamjcrDependency = DependencyBuilder.create().setGroupId("org.jboss.seam.jcr")
                 .setArtifactId("seam-jcr");
 
-      if (!dependencyFacet.hasDependency(seamjcrDependency))
+      if (!dependencyFacet.hasDirectDependency(seamjcrDependency))
       {
          if (!dependencyFacet.hasRepository(DependencyFacet.KnownRepository.JBOSS_NEXUS))
          {
@@ -61,7 +61,7 @@ public class SeamJCRPlugin implements Plugin
                     versions, versions.get(versions.size() - 1));
          dependencyFacet.setProperty("seam.jcr.version", choosenVersion.getVersion());
 
-         dependencyFacet.addDependency(seamjcrDependency.setVersion("${seam.jcr.version}"));
+         dependencyFacet.addDirectDependency(seamjcrDependency.setVersion("${seam.jcr.version}"));
       }
       if (provider != null)
       {
